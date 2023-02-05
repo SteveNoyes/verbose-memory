@@ -32,7 +32,28 @@
       color-scheme: light dark;
       supported-color-schemes: light dark;
     }
-    /* Media Quieries */
+
+    /* Dark Mode media queries to target some Android and Outlook.com */
+
+    /* targets color attribute */
+    [data-ogsc] .fubar { }
+
+    /* targets background attribute */
+    [data-ogsb] .fubar { }
+
+    /* Dark Mode media queries to target Apple and iOS */
+
+    @media (prefers-color-scheme: dark) {
+      .darkLogo {
+      display: none !important;
+      }
+
+      .lightLogoWrapper,
+      .lightLogo {
+        display: block !important;
+      }
+    }
+
     @media screen and (max-width: 600px) { 
 
     }
@@ -75,11 +96,56 @@
           <table width="100%">
             <tr>
               <td style="text-align:center;">
-                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="outline: 1px solid red;"></a>
-                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="outline: 1px solid red;"></a>
-                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="outline: 1px solid red;"></a>
-                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="outline: 1px solid red;"></a>
-                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="outline: 1px solid red;"></a>
+                <a href="#">
+                  <img src="https://via.placeholder.com/32" class="darkLogo" alt="" style="outline: 1px solid red;">
+                  <!--
+                    To hide the light logo in Outlook and Windows 10 Mail, 
+                    you need to wrap the light logo image tag with a div.
+                  -->
+                  <div class="lightLogoWrapper" style="mso-hide: all; display: none">
+                    <image src="https://via.placeholder.com/32" class="lightLogo" style="display: none" />
+                  </div>
+                </a>
+                <a href="#">
+                  <img src="https://via.placeholder.com/32" class="darkLogo" alt="" style="outline: 1px solid red;">
+                  <!--
+                    To hide the light logo in Outlook and Windows 10 Mail, 
+                    you need to wrap the light logo image tag with a div.
+                  -->
+                  <div class="lightLogoWrapper" style="mso-hide: all; display: none">
+                    <image src="https://via.placeholder.com/32" class="lightLogo" style="display: none" />
+                  </div>
+                </a>
+                <a href="#">
+                  <img src="https://via.placeholder.com/32" class="darkLogo" alt="" style="outline: 1px solid red;">
+                  <!--
+                    To hide the light logo in Outlook and Windows 10 Mail, 
+                    you need to wrap the light logo image tag with a div.
+                  -->
+                  <div class="lightLogoWrapper" style="mso-hide: all; display: none">
+                    <image src="https://via.placeholder.com/32" class="lightLogo" style="display: none" />
+                  </div>
+                </a>
+                <a href="#">
+                  <img src="https://via.placeholder.com/32" class="darkLogo" alt="" style="outline: 1px solid red;">
+                  <!--
+                    To hide the light logo in Outlook and Windows 10 Mail, 
+                    you need to wrap the light logo image tag with a div.
+                  -->
+                  <div class="lightLogoWrapper" style="mso-hide: all; display: none">
+                    <image src="https://via.placeholder.com/32" class="lightLogo" style="display: none" />
+                  </div>
+                </a>
+                <a href="#">
+                  <img src="https://via.placeholder.com/32" class="darkLogo" alt="" style="outline: 1px solid red;">
+                  <!--
+                    To hide the light logo in Outlook and Windows 10 Mail, 
+                    you need to wrap the light logo image tag with a div.
+                  -->
+                  <div class="lightLogoWrapper" style="mso-hide: all; display: none">
+                    <image src="https://via.placeholder.com/32" class="lightLogo" style="display: none" />
+                  </div>
+                </a>
               </td>
             </tr>
           </table>
