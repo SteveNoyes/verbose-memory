@@ -46,13 +46,9 @@
 ### Useful resources
 
 
-
 - [Border to Outline](https://stackoverflow.com/questions/8971004/how-to-render-a-border-to-a-div-without-occupying-any-extra-space) - The temp borders were taking up space for responsive column section.
 
-- [Title](https://www.site.com) - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-
-- [Title](https://www.site.com) - Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-
+- [Email 2 Go](https://email2go.io/blog/dark-mode-nightmares-in-email) - Dark mode media query and data-ogsc, etc.
 
 
 ## Author
