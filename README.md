@@ -35,6 +35,11 @@
   border: 1px solid red;
   to
   outline: 1px solid red;
+
+  :root {
+    color-scheme: light dark;
+    supported-color-schemes: light dark;
+  }
 ```
 
 
