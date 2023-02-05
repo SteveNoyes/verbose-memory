@@ -12,8 +12,9 @@
   <meta name="supported-color-schemes" content="light dark">
   <!-- title only for web browser -->
 	<title>Bantering Semantics</title>
-  <!-- css styles -->
+
   <style type="text/css">
+    /* basic reset styles */
     body {
       margin: 0;
       background-color: #cccccc;
@@ -25,23 +26,41 @@
       padding: 0;
     }
     img {
-      border: 0;
+      outline: 0;
     }
-
+    /* Media Quieries */
     @media screen and (max-width: 600px) { 
 
     }
+    /* Wrapper and Main */
     .wrapper {
       width: 100%;
       table-layout: fixed;
-      border: 1px solid red;
+      outline: 1px solid red;
       background: #cccccc;
     }
     .main {
+      margin: 0 auto;
       width: 100%;
       max-width: 600px;
-      border: 1px solid red;
+      outline: 1px solid red;
       background-color: #ffffff;
+    }
+    /* Two Columns Section */
+    .two-columns {
+      font-size: 0;
+      text-align: center;
+    }
+    .two-columns .column {
+      width: 100%;
+      max-width: 300px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .two-columns .content {
+      font-size: 15px;
+      text-align: left;
+      line-height: 20px;
     }
   </style>
 </head>
@@ -54,11 +73,11 @@
           <table width="100%">
             <tr>
               <td style="text-align:center;">
-                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="border: 1px solid red;"></a>
-                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="border: 1px solid red;"></a>
-                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="border: 1px solid red;"></a>
-                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="border: 1px solid red;"></a>
-                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="border: 1px solid red;"></a>
+                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="outline: 1px solid red;"></a>
+                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="outline: 1px solid red;"></a>
+                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="outline: 1px solid red;"></a>
+                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="outline: 1px solid red;"></a>
+                <a href="#"><img src="https://via.placeholder.com/32" alt="" style="outline: 1px solid red;"></a>
               </td>
             </tr>
           </table>
@@ -70,17 +89,70 @@
           <table width="100%">
             <tr>
               <td style="text-align: center;">
-                <a href="#"><img src="https://via.placeholder.com/300x100" alt="Logo" style="border: 1px solid red;"></a>
+                <a href="#"><img src="https://via.placeholder.com/300x100" alt="Logo" style="outline: 1px solid red;"></a>
               </td>
             </tr>
           </table>
         </td>
       </tr>
-
       <!-- Responsive Banner -->
       <tr>
         <td>
           <a href="#"><img src="https://via.placeholder.com/600x400" style="max-width:100%" alt=""></a>
+        </td>
+      </tr>
+
+      <!-- Two Column Section -->
+      <tr>
+        <td>
+          <table width="100%">
+            <tr>
+              <td class="two-columns">
+                <!-- First Column -->
+                <table class="column">
+                  <tr>
+                    <td>
+                      <table class="content">
+                        <tr>
+                          <td>
+                            <a href="#"><img src="https://via.placeholder.com/260" alt=""></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p>Building Lorem</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum est enim exercitationem porro quidem excepturi!</p>
+                            <a href="#">Lorem</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!-- Second Column -->
+                <table class="column">
+                  <tr>
+                    <td>
+                      <table class="content">
+                        <tr>
+                          <td>
+                            <a href="#"><img src="https://via.placeholder.com/260" alt=""></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p >Lorem</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum est enim exercitationem porro quidem excepturi!</p>
+                            <a href="#">Lorem</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
 
