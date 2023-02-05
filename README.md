@@ -56,3 +56,28 @@
 
 - Website - [Portfolio](https://www.stevenmnoyes.com)
 - GitHub - [SteveNoyes](https://github.com/SteveNoyes)
+
+
+## Etc
+
+
+### Boilerplate
+
+
+<!-- Put both of these sections in the <head> of your email. -->
+
+<!-- Enable Dark Mode Support -->
+<!-- <meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark only">
+
+<style type="text/css">
+    :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+    }
+
+     /* Use this media query to adapt styles for Dark Mode. */ 
+    @media (prefers-color-scheme: dark) {
+     /* Target elements as usual within the media query. */
+    }
+</style> -->
