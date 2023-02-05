@@ -27,9 +27,14 @@
 
 
 ```html
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
 ```
 
 ```css
+  border: 1px solid red;
+  to
+  outline: 1px solid red;
 ```
 
 
@@ -37,7 +42,7 @@
 
 
 
-- [Title](https://www.site.com) - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+- [Border to Outline](https://stackoverflow.com/questions/8971004/how-to-render-a-border-to-a-div-without-occupying-any-extra-space) - The temp borders were taking up space for responsive column section.
 
 - [Title](https://www.site.com) - Lorem ipsum dolor sit amet consectetur, adipisicing elit.
 
