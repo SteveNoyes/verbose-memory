@@ -15,6 +15,10 @@
 
   <style type="text/css">
     /* basic reset styles */
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
     body {
       margin: 0;
       background-color: #cccccc;
@@ -28,34 +32,32 @@
     img {
       outline: 0;
     }
-    :root {
-      color-scheme: light dark;
-      supported-color-schemes: light dark;
+    /* Dark Mode media queries to target some Android and Outlook */
+    /* targets original style color */
+    [data-ogsc] .fubar { 
+
     }
+    /* targets original attribute color */
+    [data-ogac] .fubar {
 
-    /* Dark Mode media queries to target some Android and Outlook.com */
+    }
+    /* targets original style background */
+    [data-ogsb] .fubar { 
 
-    /* targets color attribute */
-    [data-ogsc] .fubar { }
+    }
+    /* targets original attribute background */
+    [data-ogab] .fubar { 
 
-    /* targets background attribute */
-    [data-ogsb] .fubar { }
-
+    }
     /* Dark Mode media queries to target Apple and iOS */
-
     @media (prefers-color-scheme: dark) {
       .darkLogo {
       display: none !important;
       }
-
       .lightLogoWrapper,
       .lightLogo {
         display: block !important;
       }
-    }
-
-    @media screen and (max-width: 600px) { 
-
     }
     /* Wrapper and Main */
     .wrapper {
@@ -84,7 +86,10 @@
     .two-columns .content {
       font-size: 15px;
     }
-    
+    /* Media Query */
+    @media screen and (max-width: 600px) { 
+
+    }
   </style>
 </head>
 <body>
@@ -108,40 +113,24 @@
                 </a>
                 <a href="#">
                   <img src="https://via.placeholder.com/32" class="darkLogo" alt="" style="outline: 1px solid red;">
-                  <!--
-                    To hide the light logo in Outlook and Windows 10 Mail, 
-                    you need to wrap the light logo image tag with a div.
-                  -->
                   <div class="lightLogoWrapper" style="mso-hide: all; display: none">
                     <image src="https://via.placeholder.com/32" class="lightLogo" style="display: none" />
                   </div>
                 </a>
                 <a href="#">
                   <img src="https://via.placeholder.com/32" class="darkLogo" alt="" style="outline: 1px solid red;">
-                  <!--
-                    To hide the light logo in Outlook and Windows 10 Mail, 
-                    you need to wrap the light logo image tag with a div.
-                  -->
                   <div class="lightLogoWrapper" style="mso-hide: all; display: none">
                     <image src="https://via.placeholder.com/32" class="lightLogo" style="display: none" />
                   </div>
                 </a>
                 <a href="#">
                   <img src="https://via.placeholder.com/32" class="darkLogo" alt="" style="outline: 1px solid red;">
-                  <!--
-                    To hide the light logo in Outlook and Windows 10 Mail, 
-                    you need to wrap the light logo image tag with a div.
-                  -->
                   <div class="lightLogoWrapper" style="mso-hide: all; display: none">
                     <image src="https://via.placeholder.com/32" class="lightLogo" style="display: none" />
                   </div>
                 </a>
                 <a href="#">
                   <img src="https://via.placeholder.com/32" class="darkLogo" alt="" style="outline: 1px solid red;">
-                  <!--
-                    To hide the light logo in Outlook and Windows 10 Mail, 
-                    you need to wrap the light logo image tag with a div.
-                  -->
                   <div class="lightLogoWrapper" style="mso-hide: all; display: none">
                     <image src="https://via.placeholder.com/32" class="lightLogo" style="display: none" />
                   </div>
